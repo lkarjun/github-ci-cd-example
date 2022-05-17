@@ -1,6 +1,8 @@
 name: DockerWorkFlow
 
-on: [push, pull_request]
+on:
+  pull_request:
+      branches: [test-ci-cd]
 
 jobs:
   build:
