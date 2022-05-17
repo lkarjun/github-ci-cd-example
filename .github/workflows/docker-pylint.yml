@@ -37,4 +37,4 @@ jobs:
       with:
           context: .
           push: true
-          tags: lkarjun/github-workflow-example:${{ steps.lint.outputs.date }}
+          tags: lkarjun/github-workflow-example:latest
