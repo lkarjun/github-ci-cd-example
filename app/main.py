@@ -1,5 +1,4 @@
-from typing import Union
-
+"""Module fastai simple app."""
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -7,9 +6,5 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
+    """Return Hello Github CI/CD."""
     return {"Hello": "Github CI/CD"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
