@@ -20,6 +20,7 @@ jobs:
         pip install -r requirements.txt
         pip install pylint
     - name: Analysing the code with pylint
+      id: lint
       run: |
         pylint $(git ls-files '*.py')
     - name: Set up QEMU
@@ -36,4 +37,4 @@ jobs:
       with:
           context: .
           push: true
-          tags: lkarjun/github-workflow-example:$(date +%s)
+          tags: lkarjun/github-workflow-example:${{ steps.lint.outputs.date }}
