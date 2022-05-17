@@ -4,4 +4,4 @@
 
   <br>
 
-  - Made a pull request and check the [DockerHub Repository](https://hub.docker.com/repository/docker/lkarjun/github-workflow-example/general)
+  - Made a pull request to branch ```master``` and check the [DockerHub Repository](https://hub.docker.com/repository/docker/lkarjun/github-workflow-example/general)
