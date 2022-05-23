@@ -2,7 +2,7 @@ name: DockerWorkFlow
 
 on:
   pull_request:
-      branches: [test-ci-cd]
+      branches: [master]
 
 jobs:
   build:

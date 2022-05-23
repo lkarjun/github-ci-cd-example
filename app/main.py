@@ -13,4 +13,4 @@ def read_root():
 @app.get("/get_item")
 def get_item():
     """Return random number."""
-    return random.random()
+    return {"random number": random.random()}
